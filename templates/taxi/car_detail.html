@@ -13,10 +13,12 @@
       <th>Username</th>
     </tr>
     {% for driver in car.drivers.all %}
-      <td>{{ driver.id }}</td>
-      <td>{{ driver.first_name }}</td>
-      <td>{{ driver.last_name }}</td>
-      <td>{{ driver.username }}</td>
+      <tr>
+        <td>{{ driver.id }}</td>
+        <td>{{ driver.first_name }}</td>
+        <td>{{ driver.last_name }}</td>
+        <td>{{ driver.username }}</td>
+      </tr>
     {% endfor %}
   </table>
 {% endblock %}
